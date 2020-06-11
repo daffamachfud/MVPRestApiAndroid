@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Activity.MainActivity">
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+       android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@android:color/black"
+        android:outlineSpotShadowColor="@android:color/black"
+        app:counterOverflowTextColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        app:counterTextColor="@android:color/black"
+        app:helperTextTextColor="@android:color/black"
+        app:boxStrokeColor="@android:color/black"
+        app:hintTextColor="@android:color/black"
+        app:boxBackgroundColor="@android:color/black"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_nomorTelepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nomor Telepon"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:textColorLink="@android:color/black"
+            android:outlineSpotShadowColor="@android:color/black"
+            android:outlineAmbientShadowColor="@android:color/black"
+            android:shadowColor="@android:color/black"
+            android:textColorHighlight="@android:color/black"
+            android:background="@color/colorAccent"
+            android:inputType="number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_nomorTelepon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Masuk"
+        android:background="@android:color/holo_blue_light"
+        />
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminate="true"
+        android:indeterminateTint="@android:color/black"
+        android:id="@+id/pb_loading_login_number"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
